@@ -1,0 +1,169 @@
+\input{preamble}
+
+
+\begin{document}
+% \usebackgroundtemplate{\includegraphics[width=\paperwidth]{img/bg.jpg}}
+\frame{\titlepage}
+
+% Przebieg prezentacji
+\begin{frame}
+  \frametitle{Przebieg prezentacji}
+  \tableofcontents
+\end{frame}
+
+% The following causes the table of contents to be shown 
+% at the beginning of every subsection. Delete this, if you do not want it.
+\AtBeginSubsection[]{
+  \frame<beamer>{
+    \frametitle{Przebieg prezentacji}
+    \tableofcontents[currentsection,currentsubsection]
+  }
+}
+
+\section{Autoprezentacja}
+\subsection{Projekt inżynierski}
+\begin{frame}
+  \frametitle{System ultradźwiękowy ze spłaszczoną wiązką emisyjną}
+  
+  \begin{itemize}
+  	\item Projekt realizowany u dr Bogdana Kreczmera na specjalności Robotyka
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[width=0.2\textwidth]{img/zewnatrz_tyl}
+    \hspace{1in}
+    \includegraphics[width=0.2\textwidth]{img/zewnatrz_przod} 
+    \bigskip
+    
+    \includegraphics[width=0.2\textwidth]{img/srodek_tyl} 
+    \hspace{1in}
+    \includegraphics[width=0.2\textwidth]{img/tyl} 
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Zastosowanie}
+  
+  Wykrywanie ścian oraz narożników pokoju
+  za pomocą pojedynczej emisji wiązki ultradźwiękowej.
+\end{frame}
+
+\subsection{Zainteresowania}
+\begin{frame}
+  \frametitle{Zainteresowania inżynieryjne}
+  
+  Do moich zainteresowań naukowych zaliczam: \pause
+  \begin{itemize}
+  	\item języki programowania wspierające paradygmat obiektowy, \pause
+  	\item metaprogramowanie,                                     \pause
+  	\item wzorce projektowe,                                     \pause
+  	\item współbieżność,                                         \pause
+  	\item systemy kontroli wersji (Git/SVN),                     \pause
+  	\item metodyka zarządzania Lean Six Sigma.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Żeglarstwo}
+	Dorobek żeglarski:	
+	\begin{itemize}
+		\item jachtowy sternik morski,                                    \pause
+		\item sternik na dwóch koloniach żeglarskich,
+		  instruktor żeglarstwa na dwóch obozach żeglarskich,             \pause
+		\item udział w międzynarodowych regatach Tall Ships' Races 2009
+		  jako starszy wachty na s/y Gedania,                             \pause
+		\item 1 miejsce w kategorii C w międzynarodowych regatach
+		  The Culture 2011 Tall Ships Regatta jako członek załogi,        \pause
+		\item oraz wiele innych mniej ważnych obozów żeglarsko-harcerskich i rejsów...          
+	\end{itemize}
+\end{frame}
+	
+	\begin{frame}[allowframebreaks]{Żeglarstwo --- zdjęcia}
+	\begin{figure}[!htp]
+		\includegraphics[width=0.48\textwidth]{img/mazury} 
+		\hspace{0.02\textwidth}
+		\includegraphics[width=0.48\textwidth]{img/roza} 
+		\caption{Sternik oraz instruktor żeglarski na Mazurach}
+	\end{figure}
+
+	
+	\begin{figure}[!htp]
+		\includegraphics[width=0.48\textwidth]{img/tsr2}
+		\hspace{0.02\textwidth}
+		\includegraphics[width=0.48\textwidth]{img/tsr3}
+		\caption{Regaty The Culture 2011 Tall Ships Regatta}
+	\end{figure}
+	
+	\begin{figure}[!htp]
+		\includegraphics[width=0.48\textwidth]{img/kruzernstern}
+		\hspace{0.02\textwidth}
+		\includegraphics[width=0.48\textwidth]{img/flaga}
+		\caption{Regaty The Culture 2011 Tall Ships Regatta}
+	\end{figure}
+	
+	\begin{figure}[!htp]
+		\includegraphics[width=0.48\textwidth]{img/chorwa}
+		\hspace{0.02\textwidth}
+		\includegraphics[width=0.48\textwidth]{img/chorwa2}
+		\caption{Sylwester 2009 w Chorwacji}
+	\end{figure}
+	
+	\begin{figure}[!htp]
+		\includegraphics[width=0.48\textwidth]{img/chorwa3}
+		\hspace{0.02\textwidth}
+		\includegraphics[width=0.48\textwidth]{img/chorwa4}
+		\caption{Sylwester 2009 w Chorwacji}
+	\end{figure}
+\end{frame}
+
+\subsection{Praca}
+
+
+\begin{frame}{Nokia Siemens Networks}
+  \framesubtitle{(niedługo nastąpi zmiana nazwy na Nokia Solutions and Networks)}
+  Jestem pracownikiem Nokia Siemens Networks:
+  \begin{itemize}
+  	\item stanowisko: inżynier ds. rozwoju oprogramowania,  \pause
+  	\item dział: WCDMA (ang. \textit{Wideband Code Division Multiple Access}), \pause
+  	\item domena: ALMAG (ang. \textit{Antena Line Management}).
+  \end{itemize}
+  
+  \begin{figure}[!htp]
+  	\includegraphics[width=0.45\textwidth]{img/gtb}
+  	\hspace{0.38\textwidth}
+  	\includegraphics[width=0.15\textwidth]{img/logo}
+  \end{figure}
+\end{frame}
+
+\section{Plan seminarium}
+\subsection{Wybór tematu}
+\begin{frame}{Inteligentne wskaźniki}
+	Na seminarium specjalnościowym poruszę temat inteligentnych wskaźników.
+	Odpowiem m.in. na następujące pytania: \pause
+	\begin{itemize}
+		\item Czym są inteligentne wskaźniki? Jakie korzyści niosą ze sobą? \pause
+		\item Jakie języki posiadają wbudowane inteligentne wskaźniki?       \pause
+		\item Czym są RAII i \texttt{std::auto\_ptr} (często mylnie nazywany jest
+		  inteligentnym wskaźnikiem) i dlaczego \texttt{std::auto\_ptr}
+		  wychodzi z użycia?              \pause
+		\item Jakie inteligentne wskaźniki udostępnia biblioteka Boost?  \pause
+		  Jak ich używać?
+	\end{itemize}
+\end{frame}
+
+
+
+\section{}
+\begin{frame}
+  \begin{center}
+    \huge
+    Dziękuję za uwagę!
+  \end{center}
+  \bigskip
+  
+      \begin{figure}
+      \includegraphics[scale=0.5]{img/death-by-beamer}
+    \end{figure}
+ 
+
+\end{frame}
+
+\end{document}
